@@ -2,6 +2,13 @@
   /* //border: 1px solid purple; */
 }
 
+:root {
+  font-size: 14px;
+  --border-radius: 4px;
+  --primary-color: purple;
+  --secondy-color: darkslategray;
+}
+
 body {
   background-color: silver;
 
@@ -15,20 +22,55 @@ body {
 }
 
 .card-wrapper {
-  min-width: 400px;
+  min-width: 320px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 16px;
 
   background-color: white;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.5rem;
 }
 
 .card-title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 .card-description {
-  font-size: 14px;
   color: darkslategray;
+}
+.card-content p {
+  color: rgb(80, 80, 80);
+}
+
+button {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0.6rem 0.5rem 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+button.ghost-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.ghost-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.card-actions button.ghost-button:first-child {
+  position: relative;
+  left: -0.5rem;
 }
