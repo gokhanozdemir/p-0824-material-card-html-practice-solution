@@ -1,0 +1,7 @@
+- [ ] Ön tanımlı css'lerin hepsini sil
+- [ ] Reset.css ekliyoruz
+- [ ] card-wrapper oluştur
+    - [ ] title font size 20px black
+    - [ ] secondary font size 14px darkslategray
+    - [ ] border radius
+    - [ ] shadow
