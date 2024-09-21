@@ -70,7 +70,14 @@ button.ghost-button:hover {
   color: white;
 }
 
+.card-actions {
+}
+
 .card-actions button.ghost-button:first-child {
   position: relative;
   left: -0.5rem;
+}
+
+.card-content:has(.card-actions) {
+  padding-bottom: 1rem;
 }
